@@ -1,7 +1,3 @@
-"""
-Nata Supermarkets — minimal interactive analytics app.
-Text and tables only, no charts. Run:  streamlit run app.py
-"""
 import pandas as pd
 import streamlit as st
 from sklearn.model_selection import train_test_split
@@ -20,7 +16,7 @@ FEATURES = ["Income", "Age", "Children", "Recency", "Tenure_Days", "TotalSpend",
 
 @st.cache_data
 def load():
-    return pd.read_excel("data/nata_scored.xlsx")
+    return pd.read_excel("nata_scored.xlsx")
 
 
 @st.cache_resource
